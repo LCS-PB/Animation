@@ -43,7 +43,7 @@ turtle.setPenColor(to: .black)
 turtle.setPenSize(to: 1)
 turtle.goToHome()
 turtle.penDown()
-for i in 1...4 {
+for int in 1...4 {
     turtle.forward(steps: 100)
     turtle.left(by: 90)
     turtle.currentHeading()
@@ -240,7 +240,7 @@ for i in 1...8 {
     turtle.drawSelf()
 }
 
-
+canvas.drawAxes(withScale: true)
 /*:
  ## Show the Assistant Editor
  Don't see any results?

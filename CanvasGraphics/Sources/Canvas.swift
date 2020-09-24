@@ -278,8 +278,9 @@ public class Canvas : NSImageView, CustomPlaygroundDisplayConvertible {
          - to: Ending position of the line segment.
          - lineWidth: Width of the line segment.
          - capStyle: The shape of line segment endpoints (square, rounded, et cetera).
+         - dashed: Whether to make the line dashed or not.
      */
-    public func drawLine(from: Point, to: Point, lineWidth: Int = 0, capStyle : NSBezierPath.LineCapStyle = NSBezierPath.LineCapStyle.square) {
+    public func drawLine(from: Point, to: Point, lineWidth: Int = 0, capStyle : NSBezierPath.LineCapStyle = NSBezierPath.LineCapStyle.square, dashed: Bool = false) {
         
         // Set attributes of shape based on the canvas scale factor
         var fromX = from.x
@@ -303,10 +304,73 @@ public class Canvas : NSImageView, CustomPlaygroundDisplayConvertible {
         } else {
             path.lineWidth = self.defaultLineWidth.asCGFloat()
         }
+
+        // Optionally make the line dashed
+        if dashed {
+            let dashes: [CGFloat] = [4, 2]
+            path.setLineDash(dashes, count: 2, phase: 0)
+        }
         
         // Define the line
         path.move(to: NSPoint(x: fromX, y: fromY))
         path.line(to: NSPoint(x: toX, y: toY))
+        
+        // Set the line's color
+        NSColor(hue: lineColor.translatedHue, saturation: lineColor.translatedSaturation, brightness: lineColor.translatedBrightness, alpha: lineColor.translatedAlpha).setStroke()
+        
+        // Draw the line
+        path.stroke()
+        
+    }
+    
+    /**
+     Draw a bezier curve between the provided points.
+     
+     - Parameters:
+         - from: Starting position of the curve
+         - to: Ending position of the curve
+         - lineWidth: Position of the control point
+     */
+    public func drawCurve(from: Point, to: Point, control1: Point, control2: Point, lineWidth: Int = 0, capStyle : NSBezierPath.LineCapStyle = NSBezierPath.LineCapStyle.square) {
+        
+        // Set attributes of shape based on the canvas scale factor
+        var fromX = from.x
+        fromX *= scale.asCGFloat()
+        var fromY = from.y
+        fromY *= scale.asCGFloat()
+        var toX = to.x
+        toX *= scale.asCGFloat()
+        var toY = to.y
+        toY *= scale.asCGFloat()
+        var control1X = control1.x
+        control1X *= scale.asCGFloat()
+        var control1Y = control1.y
+        control1Y *= scale.asCGFloat()
+        var control2X = control2.x
+        control2X *= scale.asCGFloat()
+        var control2Y = control2.y
+        control2Y *= scale.asCGFloat()
+
+        var lineWidth = lineWidth
+        lineWidth *= scale
+        
+        // Make the new path with the specified cap style
+        NSBezierPath.defaultLineCapStyle = capStyle
+        let path = NSBezierPath()
+        
+        // Set width of border
+        if lineWidth > 0 {
+            path.lineWidth = lineWidth.asCGFloat()
+        } else {
+            path.lineWidth = self.defaultLineWidth.asCGFloat()
+        }
+        
+        // Define the start of the curve
+        path.move(to: NSPoint(x: fromX, y: fromY))
+        // TODO: Add curve call here
+        path.curve(to: NSPoint(x: toX, y: toY),
+                   controlPoint1: NSPoint(x: control1X, y: control1Y),
+                   controlPoint2: NSPoint(x: control2X, y: control2Y))
         
         // Set the line's color
         NSColor(hue: lineColor.translatedHue, saturation: lineColor.translatedSaturation, brightness: lineColor.translatedBrightness, alpha: lineColor.translatedAlpha).setStroke()
@@ -346,7 +410,7 @@ public class Canvas : NSImageView, CustomPlaygroundDisplayConvertible {
         if borderWidth > 0 {
             path.lineWidth = borderWidth.asCGFloat()
         } else {
-            path.lineWidth = CGFloat(self.defaultBorderWidth * scale)
+            path.lineWidth = CGFloat(self.defaultBorderWidth)
         }
         
         // Set ellipse border color
@@ -675,7 +739,7 @@ public class Canvas : NSImageView, CustomPlaygroundDisplayConvertible {
     /// For example:
     ///
     /// ![axes](http://russellgordon.ca/CanvasGraphics/drawAxes_example.png)
-    public func drawAxes() {
+    public func drawAxes(withScale: Bool = false, by: Int = 50) {
         
         // Draw horizontal axis
         self.drawLine(from: Point(x: self.width * -10, y: 0), to: Point(x: self.width * 10, y: 0), capStyle: NSBezierPath.LineCapStyle.square)
@@ -683,11 +747,53 @@ public class Canvas : NSImageView, CustomPlaygroundDisplayConvertible {
         // Draw vertical axis
         self.drawLine(from: Point(x: 0, y: self.height * -10), to: Point(x: 0, y: self.height * 10), capStyle: NSBezierPath.LineCapStyle.square)
         
+        // Determine horizontal start and end points
+        let horizontalStart = self.width / by * -1
+        let horizontalEnd = horizontalStart * -1
+
+        // Determine vertical start and end points
+        let verticalStart = self.height / by * -1
+        let verticalEnd = verticalStart * -1
+
         // Draw labels
-        self.drawText(message: "x", at: Point(x: 50, y: 5))
-        self.drawText(message: "y", at: Point(x: 5, y: 50))
+        self.drawText(message: "x", at: Point(x: horizontalEnd * by - 10, y: 5), size: 12)
+        self.drawText(message: "y", at: Point(x: 5, y: verticalEnd * by - 20), size: 12)
+        
+        // Save line color
+        if withScale {
+            
+            let priorLineColor = self.lineColor
+            self.lineColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 18)
+            
+            // Draw horizontal scale and grid
+            for x in stride(from: horizontalStart * by, through: horizontalEnd * by, by: by) {
+                
+                // Scale
+                if x != 0 {
+                    self.drawText(message: "\(x)", at: Point(x: x + 5, y: 5), size: 9)
+                }
+                
+                // Grid
+                self.drawLine(from: Point(x: x, y: self.height * -1), to: Point(x: x, y: self.height), dashed: true)
+            }
+
+            // Draw vertical scale and grid
+            for y in stride(from: verticalStart * by, through: verticalEnd * by, by: by) {
+                
+                // Scale
+                if y != 0 && y != verticalEnd * by {
+                    self.drawText(message: "\(y)", at: Point(x: 5, y: y - 15), size: 9)
+                }
+                
+                // Grid
+                self.drawLine(from: Point(x: self.width * -1, y: y), to: Point(x: self.width, y: y), dashed: true)
+            }
+            
+            // Restore line color
+            self.lineColor = priorLineColor
+
+        }
         
     }
     
 }
-
