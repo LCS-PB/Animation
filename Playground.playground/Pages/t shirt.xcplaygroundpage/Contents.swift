@@ -44,7 +44,8 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
-canvas.drawAxes()
+
+canvas.defaultLineWidth = 4
 canvas.drawLine(from: Point(x: 75, y: 350 ), to: Point(x: 250, y: 75))
 canvas.drawLine(from: Point(x: 250, y: 75 ), to: Point(x: 425, y: 350))
 canvas.drawLine(from: Point(x: 75, y: 350 ), to: Point(x: 425, y: 350))
@@ -54,9 +55,9 @@ canvas.drawLine(from: Point(x: 135, y: 300 ), to: Point(x: 333, y: 300))
 canvas.drawLine(from: Point(x: 135, y: 300 ), to: Point(x: 265, y: 100))
 canvas.drawLine(from: Point(x: 395, y: 350 ), to: Point(x: 265, y: 145))
 canvas.drawLine(from: Point(x: 160, y: 300 ), to: Point(x: 265, y: 145))
+canvas.drawLine(from: Point(), to: <#T##Point#>)
 
-
-
+canvas.copyToClipboard()
 
 
 /*:

@@ -39,8 +39,8 @@ let turtle = Tortoise(drawingUpon: canvas)
 
 // Draw a square
 turtle.penUp()
-turtle.setPenColor(to: .black)
-turtle.setPenSize(to: 1)
+turtle.setPenColor(to: .black)wesadwsadddd
+turtle.setPenSize(to: 1)
 turtle.goToHome()
 turtle.penDown()
 for int in 1...4 {
