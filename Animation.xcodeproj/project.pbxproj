@@ -137,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				8134E7921C14CD5700EC4523 /* Playground.playground */,
-				814ADAE3248D506300F80486 /* AudioKit */,
 				818878472199C6A0008CB375 /* CanvasGraphics */,
 				81DBFBF622E96442005EDE85 /* Documentation */,
 				81064A081C130A10007ED524 /* Animation */,
@@ -182,13 +181,6 @@
 				814ADAF2248E9FDA00F80486 /* Sketchable.swift */,
 			);
 			name = Support;
-			sourceTree = "<group>";
-		};
-		814ADAE3248D506300F80486 /* AudioKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AudioKit;
 			sourceTree = "<group>";
 		};
 		814ADAE6248D509900F80486 /* Frameworks */ = {
