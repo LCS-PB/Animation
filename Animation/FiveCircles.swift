@@ -46,7 +46,7 @@ class FiveCircles: NSObject, Sketchable {
         canvas.fillColor = Color.black
         canvas.drawEllipse(at: Point(x: x5 - 25, y: 25), width: 50, height: 50)
         x5 += 1
-    
+     
     
     }
     
