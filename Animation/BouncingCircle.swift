@@ -28,11 +28,11 @@ class BouncingCircle: NSObject, Sketchable {
         canvas = Canvas(width: 500, height: 500)
         
         // Set starting position
-        x = 250
+        x = Int.random (in: 1...500)
         
         
         // Slow down the animation
-        canvas.framesPerSecond = 60
+        canvas.framesPerSecond = 160
         
     }
     
@@ -56,6 +56,11 @@ class BouncingCircle: NSObject, Sketchable {
             dx -= 1
         } else if x == 0 {
             dx = 1
+        }
+        if y >= 500 {
+            dy -= 1
+        } else if y == 0 {
+            dy = 1
         }
         
         
