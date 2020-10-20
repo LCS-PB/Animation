@@ -32,29 +32,35 @@ class BouncingCircle: NSObject, Sketchable {
         
         
         // Slow down the animation
-        canvas.framesPerSecond = 10
+        canvas.framesPerSecond = 60
         
     }
-        
+    
     
     
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
+        canvas.drawShapesWithBorders = false
+        canvas.fillColor = Color.white
+        canvas.drawRectangle(at: Point(x: 0, y: 0 ), width: 500, height: 500)
         
         // Change position
         x -= 0
         
         // Draw an ellipse in the middle of the canvas
+        canvas.fillColor = Color.black
         canvas.drawEllipse(at: Point(x: x, y: y ), width: 50, height: 50)
-        x += 5
-        y += 1
+        x += dx
+        y += dy
         if x >= 500 {
             dx -= 1
         } else if x == 0 {
             dx = 1
         }
-        }
+        
+        
     }
-    
+}
+
 
 
