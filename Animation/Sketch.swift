@@ -20,9 +20,12 @@ class Sketch: NSObject {
 //    var currentDrawing = BouncingCircle()
 //    var currentDrawing = FourCourners()
 //    var currentDrawing = FiveCircles()
-    var currentDrawing = LinesFromCircles()
+//    var currentDrawing = LinesFromCircles()
+    // var currentDrawing = Spiral()
+    var currentDrawing = FunctionArt1()
+    }
+    
 
-}
 
 
 

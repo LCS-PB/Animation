@@ -31,6 +31,10 @@
 		C5736CA2253DC04300D1893B /* FourCourners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5736CA1253DC04300D1893B /* FourCourners.swift */; };
 		C5736CA6253DC49100D1893B /* BouncingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5736CA5253DC49100D1893B /* BouncingCircle.swift */; };
 		C58A36FE2540ADC300DDA1BE /* LinesFromCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A36FD2540ADC300DDA1BE /* LinesFromCircles.swift */; };
+		C5B4DA7125642ECC00CA1AC5 /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA7025642ECC00CA1AC5 /* Spiral.swift */; };
+		C5B4DA7425642EF300CA1AC5 /* IndividualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA7325642EF300CA1AC5 /* IndividualSpiral.swift */; };
+		C5B4DA7725642F7B00CA1AC5 /* MathFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA7625642F7B00CA1AC5 /* MathFunction.swift */; };
+		C5B4DA7A2564353F00CA1AC5 /* FunctionArt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA792564353F00CA1AC5 /* FunctionArt1.swift */; };
 		C5EA44DF2538CC87006015A1 /* MovingSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA44DE2538CC87006015A1 /* MovingSquare.swift */; };
 		C5EA44E22538D305006015A1 /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA44E12538D305006015A1 /* FiveCircles.swift */; };
 /* End PBXBuildFile section */
@@ -120,6 +124,10 @@
 		C5736CA1253DC04300D1893B /* FourCourners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCourners.swift; sourceTree = "<group>"; };
 		C5736CA5253DC49100D1893B /* BouncingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingCircle.swift; sourceTree = "<group>"; };
 		C58A36FD2540ADC300DDA1BE /* LinesFromCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesFromCircles.swift; sourceTree = "<group>"; };
+		C5B4DA7025642ECC00CA1AC5 /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
+		C5B4DA7325642EF300CA1AC5 /* IndividualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSpiral.swift; sourceTree = "<group>"; };
+		C5B4DA7625642F7B00CA1AC5 /* MathFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunction.swift; sourceTree = "<group>"; };
+		C5B4DA792564353F00CA1AC5 /* FunctionArt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt1.swift; sourceTree = "<group>"; };
 		C5EA44DE2538CC87006015A1 /* MovingSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingSquare.swift; sourceTree = "<group>"; };
 		C5EA44E12538D305006015A1 /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +188,10 @@
 				C5736CA1253DC04300D1893B /* FourCourners.swift */,
 				C5736CA5253DC49100D1893B /* BouncingCircle.swift */,
 				C58A36FD2540ADC300DDA1BE /* LinesFromCircles.swift */,
+				C5B4DA7025642ECC00CA1AC5 /* Spiral.swift */,
+				C5B4DA7325642EF300CA1AC5 /* IndividualSpiral.swift */,
+				C5B4DA7625642F7B00CA1AC5 /* MathFunction.swift */,
+				C5B4DA792564353F00CA1AC5 /* FunctionArt1.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -495,12 +507,16 @@
 			files = (
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
+				C5B4DA7125642ECC00CA1AC5 /* Spiral.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				C5EA44DF2538CC87006015A1 /* MovingSquare.swift in Sources */,
 				C58A36FE2540ADC300DDA1BE /* LinesFromCircles.swift in Sources */,
+				C5B4DA7725642F7B00CA1AC5 /* MathFunction.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
+				C5B4DA7A2564353F00CA1AC5 /* FunctionArt1.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,
+				C5B4DA7425642EF300CA1AC5 /* IndividualSpiral.swift in Sources */,
 				814ADAF1248E9F8200F80486 /* AudioAnalyser.swift in Sources */,
 				C5736CA6253DC49100D1893B /* BouncingCircle.swift in Sources */,
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
