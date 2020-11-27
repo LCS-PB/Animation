@@ -51,7 +51,10 @@ class thirdanimation: NSObject, Sketchable {
         
         // Draw an ellipse in the middle of the canvas
 //        canvas.fillColor = Color.init(hue: 173, saturation: 65, brightness: 63, alpha: 0)
-        canvas.fillColor = Color(hue: 156, saturation: 70, brightness: 90, alpha: 80)
+        let int = Int.random(in: 1...500)
+        let int2 = Int.random(in: 1...500)
+        let rainbow = Color(hue: int2, saturation: 100, brightness: int, alpha: Int(int2))
+        canvas.fillColor = rainbow
                             canvas.drawShapesWithFill = true
                             
                             var star: [Point] = []

@@ -30,18 +30,18 @@
 		81F935042476B0E000CD75D8 /* Tortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F935032476B0E000CD75D8 /* Tortoise.swift */; };
 		C520B288257080FF00E042EB /* 3 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C520B287257080FF00E042EB /* 3 animation.swift */; };
 		C520B28B2570845F00E042EB /* 4 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C520B28A2570845F00E042EB /* 4 animation.swift */; };
-		C520B28F25708ABC00E042EB /* 5 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C520B28E25708ABC00E042EB /* 5 animation.swift */; };
 		C522D381256D670500ABB63D /* 1.0 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D380256D670500ABB63D /* 1.0 animation.swift */; };
-		C567952725680266002C5D77 /* FunctionArt2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C567952625680266002C5D77 /* FunctionArt2.swift */; };
 		C5736CA2253DC04300D1893B /* FourCourners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5736CA1253DC04300D1893B /* FourCourners.swift */; };
 		C5736CA6253DC49100D1893B /* BouncingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5736CA5253DC49100D1893B /* BouncingCircle.swift */; };
 		C58A36FE2540ADC300DDA1BE /* 1 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A36FD2540ADC300DDA1BE /* 1 animation.swift */; };
 		C5B4DA7125642ECC00CA1AC5 /* 2 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA7025642ECC00CA1AC5 /* 2 animation.swift */; };
 		C5B4DA7425642EF300CA1AC5 /* 2.0 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA7325642EF300CA1AC5 /* 2.0 animation.swift */; };
-		C5B4DA7725642F7B00CA1AC5 /* MathFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA7625642F7B00CA1AC5 /* MathFunction.swift */; };
-		C5B4DA7A2564353F00CA1AC5 /* FunctionArt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4DA792564353F00CA1AC5 /* FunctionArt1.swift */; };
 		C5EA44DF2538CC87006015A1 /* MovingSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA44DE2538CC87006015A1 /* MovingSquare.swift */; };
 		C5EA44E22538D305006015A1 /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA44E12538D305006015A1 /* FiveCircles.swift */; };
+		C5FC21EC25713D3100CA520B /* 4.0 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC21EB25713D3100CA520B /* 4.0 animation.swift */; };
+		C5FC21F6257146D700CA520B /* 5 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC21F5257146D700CA520B /* 5 animation.swift */; };
+		C5FC21FE257147DF00CA520B /* 6 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC21FD257147DE00CA520B /* 6 animation.swift */; };
+		C5FC220725714BE300CA520B /* 7 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC220625714BE300CA520B /* 7 animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,18 +128,18 @@
 		81F935032476B0E000CD75D8 /* Tortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tortoise.swift; sourceTree = "<group>"; };
 		C520B287257080FF00E042EB /* 3 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3 animation.swift"; sourceTree = "<group>"; };
 		C520B28A2570845F00E042EB /* 4 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4 animation.swift"; sourceTree = "<group>"; };
-		C520B28E25708ABC00E042EB /* 5 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5 animation.swift"; sourceTree = "<group>"; };
 		C522D380256D670500ABB63D /* 1.0 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.0 animation.swift"; sourceTree = "<group>"; };
-		C567952625680266002C5D77 /* FunctionArt2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt2.swift; sourceTree = "<group>"; };
 		C5736CA1253DC04300D1893B /* FourCourners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCourners.swift; sourceTree = "<group>"; };
 		C5736CA5253DC49100D1893B /* BouncingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingCircle.swift; sourceTree = "<group>"; };
 		C58A36FD2540ADC300DDA1BE /* 1 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1 animation.swift"; sourceTree = "<group>"; };
 		C5B4DA7025642ECC00CA1AC5 /* 2 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2 animation.swift"; sourceTree = "<group>"; };
 		C5B4DA7325642EF300CA1AC5 /* 2.0 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.0 animation.swift"; sourceTree = "<group>"; };
-		C5B4DA7625642F7B00CA1AC5 /* MathFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunction.swift; sourceTree = "<group>"; };
-		C5B4DA792564353F00CA1AC5 /* FunctionArt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt1.swift; sourceTree = "<group>"; };
 		C5EA44DE2538CC87006015A1 /* MovingSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingSquare.swift; sourceTree = "<group>"; };
 		C5EA44E12538D305006015A1 /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
+		C5FC21EB25713D3100CA520B /* 4.0 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4.0 animation.swift"; sourceTree = "<group>"; };
+		C5FC21F5257146D700CA520B /* 5 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5 animation.swift"; sourceTree = "<group>"; };
+		C5FC21FD257147DE00CA520B /* 6 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6 animation.swift"; sourceTree = "<group>"; };
+		C5FC220625714BE300CA520B /* 7 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7 animation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,10 +203,10 @@
 				C5B4DA7325642EF300CA1AC5 /* 2.0 animation.swift */,
 				C520B287257080FF00E042EB /* 3 animation.swift */,
 				C520B28A2570845F00E042EB /* 4 animation.swift */,
-				C520B28E25708ABC00E042EB /* 5 animation.swift */,
-				C5B4DA7625642F7B00CA1AC5 /* MathFunction.swift */,
-				C5B4DA792564353F00CA1AC5 /* FunctionArt1.swift */,
-				C567952625680266002C5D77 /* FunctionArt2.swift */,
+				C5FC21EB25713D3100CA520B /* 4.0 animation.swift */,
+				C5FC21F5257146D700CA520B /* 5 animation.swift */,
+				C5FC21FD257147DE00CA520B /* 6 animation.swift */,
+				C5FC220625714BE300CA520B /* 7 animation.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -520,19 +520,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C567952725680266002C5D77 /* FunctionArt2.swift in Sources */,
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
+				C5FC21EC25713D3100CA520B /* 4.0 animation.swift in Sources */,
 				C5B4DA7125642ECC00CA1AC5 /* 2 animation.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				C520B28B2570845F00E042EB /* 4 animation.swift in Sources */,
 				C5EA44DF2538CC87006015A1 /* MovingSquare.swift in Sources */,
 				C58A36FE2540ADC300DDA1BE /* 1 animation.swift in Sources */,
-				C520B28F25708ABC00E042EB /* 5 animation.swift in Sources */,
-				C5B4DA7725642F7B00CA1AC5 /* MathFunction.swift in Sources */,
+				C5FC21F6257146D700CA520B /* 5 animation.swift in Sources */,
+				C5FC21FE257147DF00CA520B /* 6 animation.swift in Sources */,
+				C5FC220725714BE300CA520B /* 7 animation.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
-				C5B4DA7A2564353F00CA1AC5 /* FunctionArt1.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,
 				C5B4DA7425642EF300CA1AC5 /* 2.0 animation.swift in Sources */,
 				C520B288257080FF00E042EB /* 3 animation.swift in Sources */,

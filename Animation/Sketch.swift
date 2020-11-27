@@ -8,29 +8,29 @@ class Sketch: NSObject {
     //       the Sketchable protocol.
     //
     //       Therefore, the line immediately below, or one like it, must always be present.
-//    var currentDrawing = BasicSketch()
-
+    //    var currentDrawing = BasicSketch()
+    
     // To try out other included sketches:
     // 1. Comment out the code on line 11.
     // 2. Uncomment one of the lines below.
-//    var currentDrawing = TurtleSketch()
-//    var currentDrawing = AudioInputSketch()
-//    var CurrentDrawing = StaticSketch()
-//    var currentDrawing = MovingSquare()
-//    var currentDrawing = BouncingCircle()
-//    var currentDrawing = MovingCircle()
-//    var currentDrawing = FourCourners()
-//    var currentDrawing = FiveCircles()
-//    var currentDrawing = LinesFromCircles()
-//     var currentDrawing = Spiral()
-//      var currentDrawing = IndividualSpiral()
-//    var currentDrawing = FunctionArt1()
-   // var currentDrawing = FunctionArt2()
-//    var currentDrawing = thirdanimation()
-   var currentDrawing = fourthanimation()
-//    var currentDrawing = fifthanimation()
-    }
-    
+    //    var currentDrawing = TurtleSketch()
+    //    var currentDrawing = AudioInputSketch()
+    //    var CurrentDrawing = StaticSketch()
+    //    var currentDrawing = MovingSquare()
+    //    var currentDrawing = BouncingCircle()
+    //    var currentDrawing = MovingCircle()
+    //    var currentDrawing = FourCourners()
+    //    var currentDrawing = FiveCircles()
+    //    var currentDrawing = LinesFromCircles()
+    //     var currentDrawing = Spiral()
+    //      var currentDrawing = IndividualSpiral()
+//        var currentDrawing = thirdanimation()
+//       var currentDrawing = FunctionArt1() //fourthanimation
+//    var currentDrawing = FunctionArt2()
+//    var currentDrawing = FunctionArt3()
+//    var currentDrawing = FunctionArt4()
+}
+
 
 
 
