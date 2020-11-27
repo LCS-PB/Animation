@@ -11,7 +11,7 @@ import Foundation
 import CanvasGraphics
 
 // NOTE: This is a completely empty sketch; it can be used as a template.
-class FunctionArt1: NSObject, Sketchable {
+class FunctionArt2: NSObject, Sketchable {
 
     // NOTE: Every sketch must contain an object of type Canvas named 'canvas'
     //       Therefore, the line immediately below must always be present.
@@ -19,7 +19,8 @@ class FunctionArt1: NSObject, Sketchable {
 
     // Add many functions
     // This is now a list, or an array, of functions
-    var functions: [MathFunction] = []    // empty list
+    var redBand: [MathFunction] = []    // empty list
+    var smallerRedBand: [MathFunction] = []
     
     // This function runs once
     override init() {
@@ -36,23 +37,23 @@ class FunctionArt1: NSObject, Sketchable {
                                            d: CGFloat(i) * 25 - CGFloat(canvas.width / 2),
                                            c: 0,
                                            canvas: canvas,
-                                           type: .exponential)
+                                           type: .squareRoot)
             
             // Add it to the list
-            functions.append(newFunction)
+            redBand.append(newFunction)
             
         }
         
         // Speed
-        canvas.framesPerSecond = 1
+        canvas.framesPerSecond = 60
     }
 
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
 
         //clear canvas
-        canvas.fillColor = Color(hue: 45,
-                                 saturation: 67,
+        canvas.fillColor = Color(hue: 67,
+                                 saturation: 56,
                                  brightness: 70,
                                  alpha: 50)
         
@@ -60,14 +61,14 @@ class FunctionArt1: NSObject, Sketchable {
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 5
+        canvas.defaultLineWidth = 1
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
 
         //draw the entire list of functions all at once
         for x in 0...canvas.width{
-            for function in functions {
+            for function in redBand {
                 function.update(on: canvas,
                                 usingInputValue: x)
             }

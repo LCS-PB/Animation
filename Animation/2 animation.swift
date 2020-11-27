@@ -30,15 +30,15 @@ class Spiral: NSObject, Sketchable {
         for i in 1...18 {
             
             // Give the one spiral a starting angle of rotation
-            let spiral = IndividualSpiral(angleOffset: i * 20,
-                                          hue: Float(i) * 20)
-            
+            let spiral = IndividualSpiral(angleOffset: i * 50,
+                                          hue: Float(i) * 5)
+           
             // Add the new spiral to the list
             spirals.append(spiral)
         }
         
         // Speed
-        canvas.framesPerSecond = 80
+        canvas.framesPerSecond = 10
     }
 
     // This function runs repeatedly, forever, to create the animated effect
@@ -47,7 +47,7 @@ class Spiral: NSObject, Sketchable {
         // What frame are we on?
 //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 1
+        canvas.defaultLineWidth = 100
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
@@ -61,3 +61,4 @@ class Spiral: NSObject, Sketchable {
     }
 
 }
+    
