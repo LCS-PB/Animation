@@ -9,7 +9,7 @@ import Foundation
 import CanvasGraphics
 
 // NOTE: This is a completely empty sketch; it can be used as a template.
-class FunctionArt4: NSObject, Sketchable {
+class FunctionArt5: NSObject, Sketchable {
     
     // NOTE: Every sketch must contain an object of type Canvas named 'canvas'
     //       Therefore, the line immediately below must always be present.
@@ -24,7 +24,7 @@ class FunctionArt4: NSObject, Sketchable {
         
         // Create canvas object – specify size
         canvas = Canvas(width: 500, height: 500)
-        canvas.fillColor = Color.black
+        
         // Initialize many functions
         for i in 1...20 {
             
@@ -35,16 +35,16 @@ class FunctionArt4: NSObject, Sketchable {
                                            d: CGFloat(i) * 25 - CGFloat(canvas.width / 2),
                                            c: 0,
                                            canvas: canvas,
-                                           hue: 270,
-                                           type: .squareRoot)
-           
+                                           hue: 10,
+                                           type: .spiral)
+            
             // Add it to the list
             functions.append(newFunction)
             
         }
         
         // Speed
-        canvas.framesPerSecond = 100
+        canvas.framesPerSecond = 60
     }
     
     // This function runs repeatedly, forever, to create the animated effect
@@ -53,7 +53,7 @@ class FunctionArt4: NSObject, Sketchable {
         // What frame are we on?
         //        print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 200
+        canvas.defaultLineWidth = 100
         
         // Set the origin to be the middle of the canvas
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))

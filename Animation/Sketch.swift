@@ -21,14 +21,15 @@ class Sketch: NSObject {
     //    var currentDrawing = MovingCircle()
     //    var currentDrawing = FourCourners()
     //    var currentDrawing = FiveCircles()
-    //    var currentDrawing = LinesFromCircles()
-    //     var currentDrawing = Spiral()
+//        var currentDrawing = LinesFromCircles()
+//         var currentDrawing = Spiral()
     //      var currentDrawing = IndividualSpiral()
 //        var currentDrawing = thirdanimation()
 //       var currentDrawing = FunctionArt1() //fourthanimation
 //    var currentDrawing = FunctionArt2()
 //    var currentDrawing = FunctionArt3()
 //    var currentDrawing = FunctionArt4()
+    var currentDrawing = FunctionArt5()
 }
 
 

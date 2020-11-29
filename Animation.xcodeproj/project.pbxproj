@@ -31,6 +31,7 @@
 		C520B288257080FF00E042EB /* 3 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C520B287257080FF00E042EB /* 3 animation.swift */; };
 		C520B28B2570845F00E042EB /* 4 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C520B28A2570845F00E042EB /* 4 animation.swift */; };
 		C522D381256D670500ABB63D /* 1.0 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D380256D670500ABB63D /* 1.0 animation.swift */; };
+		C539EF7B2573EB31003305C8 /* 8 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C539EF7A2573EB31003305C8 /* 8 animation.swift */; };
 		C5736CA2253DC04300D1893B /* FourCourners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5736CA1253DC04300D1893B /* FourCourners.swift */; };
 		C5736CA6253DC49100D1893B /* BouncingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5736CA5253DC49100D1893B /* BouncingCircle.swift */; };
 		C58A36FE2540ADC300DDA1BE /* 1 animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A36FD2540ADC300DDA1BE /* 1 animation.swift */; };
@@ -129,6 +130,7 @@
 		C520B287257080FF00E042EB /* 3 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3 animation.swift"; sourceTree = "<group>"; };
 		C520B28A2570845F00E042EB /* 4 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4 animation.swift"; sourceTree = "<group>"; };
 		C522D380256D670500ABB63D /* 1.0 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.0 animation.swift"; sourceTree = "<group>"; };
+		C539EF7A2573EB31003305C8 /* 8 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8 animation.swift"; sourceTree = "<group>"; };
 		C5736CA1253DC04300D1893B /* FourCourners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourCourners.swift; sourceTree = "<group>"; };
 		C5736CA5253DC49100D1893B /* BouncingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncingCircle.swift; sourceTree = "<group>"; };
 		C58A36FD2540ADC300DDA1BE /* 1 animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1 animation.swift"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				C5FC21F5257146D700CA520B /* 5 animation.swift */,
 				C5FC21FD257147DE00CA520B /* 6 animation.swift */,
 				C5FC220625714BE300CA520B /* 7 animation.swift */,
+				C539EF7A2573EB31003305C8 /* 8 animation.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C539EF7B2573EB31003305C8 /* 8 animation.swift in Sources */,
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				C5FC21EC25713D3100CA520B /* 4.0 animation.swift in Sources */,
